@@ -1,0 +1,13 @@
+# Render Blueprint
+# This file allows you to create a Web Service on Render quickly.
+
+services:
+  - type: web
+    name: webgl-demos
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL Experiments</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #1a1a1a;
+            color: white;
+            padding: 2rem;
+        }
+
+        .card {
+            background: #333;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            max-width: 600px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateX(10px);
+            background: #444;
+        }
+
+        a {
+            color: #4da6ff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: block;
+            font-weight: bold;
+        }
+
+        p {
+            color: #ccc;
+            margin: 5px 0 0 0;
+        }
+
+        h1 {
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WebGL Experiments</h1>
+
+    <div class="card">
+        <a href="/citation-viz/">Citation Analysis Visualization</a>
+        <p>Interactive 3D visualization of paper citations and network connections.</p>
+    </div>
+
+    <div class="card">
+        <a href="/stalker-poc/">Stalker Unit PoC</a>
+        <p>Controllable unit with procedural IK leg animation.</p>
+    </div>
+    <div class="card">
+        <a href="/sc2-pathfinding/">SC2-Style Pathfinding PoC</a>
+        <p>A* Pathfinding with String Pulling and Steering Behaviors.</p>
+    </div>
+</body>
+
+</html>

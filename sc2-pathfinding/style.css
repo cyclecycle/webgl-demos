@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    font-family: sans-serif;
+    color: white;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    user-select: none;
+}
+
+#selection-box {
+    position: absolute;
+    border: 1px solid #00ff00;
+    background-color: rgba(0, 255, 0, 0.1);
+    pointer-events: none;
+    display: none;
+}

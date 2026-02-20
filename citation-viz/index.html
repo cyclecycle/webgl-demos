@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citation Analysis Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #050510;
+            color: #fff;
+            font-family: sans-serif;
+        }
+
+        #tooltip {
+            position: absolute;
+            background: rgba(10, 20, 40, 0.9);
+            border: 1px solid #44aaff;
+            padding: 10px;
+            border-radius: 4px;
+            pointer-events: none;
+            display: none;
+            max-width: 300px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            z-index: 10;
+        }
+
+        #tooltip h3 {
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            color: #44aaff;
+        }
+
+        #tooltip p {
+            margin: 0;
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        #info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        p.subtitle {
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .key {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 0.8em;
+        }
+
+        .key-box {
+            width: 12px;
+            height: 12px;
+            margin-right: 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="info">
+        <h1>Citation Explorer</h1>
+        <p class="subtitle">Interactive 3D Citation Network</p>
+        <div class="key"><span class="key-box" style="background:#44aaff"></span>Citation</div>
+        <div class="key"><span class="key-box" style="background:#ff44aa"></span>Linked Reference</div>
+    </div>
+    <div id="tooltip"></div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+                "tween": "https://unpkg.com/@tweenjs/tween.js@23.1.1/dist/tween.esm.js"
+            }
+        }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
